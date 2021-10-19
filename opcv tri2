@@ -6,9 +6,6 @@ img = cv2.imread("/home/pi/darknet/renshuu.jpg")
 
 # img[top : bottom, left : right]
 # サンプル1の切り出し、保存
-img1 = img[0 : 0, 300 : 400]
+img1 = img[0 : 250, 200 : 350]
 cv2.imwrite("out_sample3.jpg", img1)
 
-# サンプル2の切り出し、保存
-img2 = img[100 : 250, 300 : 450]
-cv2.imwrite("out_sample4.jpg", img2)
