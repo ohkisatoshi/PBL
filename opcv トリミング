@@ -1,6 +1,8 @@
 import cv2
 
 # 画像読み込み
+#h-360 w-480
+#長方形でも可能
 img = cv2.imread("/home/pi/darknet/renshuu.jpg")
 
 # img[top : bottom, left : right]
