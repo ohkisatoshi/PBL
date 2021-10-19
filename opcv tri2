@@ -1,13 +1,14 @@
 import cv2
 
-# 画像読み込み
+# 画像読み込み 
+#h-360 w-480
 img = cv2.imread("/home/pi/darknet/renshuu.jpg")
 
 # img[top : bottom, left : right]
 # サンプル1の切り出し、保存
-img1 = img[0 : 50, 0: 50]
-cv2.imwrite("out_sample1.jpg", img1)
+img1 = img[0 : 0, 300 : 400]
+cv2.imwrite("out_sample3.jpg", img1)
 
 # サンプル2の切り出し、保存
-img2 = img[50 : 150, 100 : 250]
-cv2.imwrite("out_sample2.jpg", img2)
+img2 = img[100 : 250, 300 : 450]
+cv2.imwrite("out_sample4.jpg", img2)
