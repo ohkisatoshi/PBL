@@ -1,0 +1,13 @@
+import cv2
+
+# 画像読み込み
+img = cv2.imread("/home/pi/darknet/renshuu.jpg")
+
+# img[top : bottom, left : right]
+# サンプル1の切り出し、保存
+img1 = img[0 : 50, 0: 50]
+cv2.imwrite("out_sample1.jpg", img1)
+
+# サンプル2の切り出し、保存
+img2 = img[50 : 150, 100 : 250]
+cv2.imwrite("out_sample2.jpg", img2)
