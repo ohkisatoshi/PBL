@@ -19,4 +19,4 @@ picgray=cv2.imread('mouse.jpg',cv2.IMREAD_COLOR)
 cv2.circle(picgray, (x0, y0), 10, (0,0,255), thickness=-1)
 cv2.arrowedLine(picgray, (x0, y0), (x0+clen, y0+int(a*clen)), (0, 0, 255), thickness=4)
 cv2.imwrite('position.jpg',picgray)
-a
+
