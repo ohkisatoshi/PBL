@@ -1,6 +1,6 @@
 import cv2
 
-im = cv2.imread('data/src/lena.jpg')
+im = cv2.imread('/home/pi/darknet/renshuu.jpg')
 
 print(type(im))
 # <class 'numpy.ndarray'>
