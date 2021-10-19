@@ -1,1 +1,21 @@
+#ライブラリインポート
+import cv2
+import numpy as np
+import math
 
+#画像の解像度を指定
+pixel=0.178 #mm/pixel
+
+#長さを測る原点、方向を指定
+x0,y0=229,239
+dx,dy=646,386
+clen=450
+#検査方向の傾きを算出
+a=(dy-y0)/(dx-x0)
+
+#画像の読み込み
+picgray=cv2.imread('mouse.jpg',cv2.IMREAD_COLOR)
+#始点、方向をプロット⇒出力
+cv2.circle(picgray, (x0, y0), 10, (0,0,255), thickness=-1)
+cv2.arrowedLine(picgray, (x0, y0), (x0+clen, y0+int(a*clen)), (0, 0, 255), thickness=4)
+cv2.imwrite('position.jpg',picgray)
