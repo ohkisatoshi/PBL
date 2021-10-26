@@ -1,0 +1,6 @@
+import cv2
+img = cv2.imread("/home/pi/darknet/renshuu.jpg")
+img1 = img[50 : 300, 50: 400]
+cv2.imwrite("out_honban1.jpg", img1)
+img2 = img[ 50: 200, 100 : 300]
+cv2.imwrite("out_honban2.jpg", img2)
