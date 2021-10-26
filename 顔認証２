@@ -17,7 +17,8 @@ for x, y, w, h in targets:
 cv2.imwrite(OUTPUT_IMG_PATH, img)
 
 #https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml
-#XMLファイルダウンロード
+#XMLファイルダウンロード元
+#example
 #XML_PATH = "C:\opencv\haarcascade_frontalface_default.xml"
 #INPUT_IMG_PATH = "C:\opencv\img\face.jpg"
 #OUTPUT_IMG_PATH = "C:\opencv\img\face_out.jpg"
