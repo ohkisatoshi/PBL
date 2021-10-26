@@ -1,0 +1,11 @@
+import face_recognition
+import matplotlib.pyplot as plt
+
+# 保存されている人物の顔の画像を読み込む。
+known_face_imgs = []
+for path in ["known-face_01.jpg", "known-face_02.jpg", "known-face_03.jpg"]:
+    img = face_recognition.load_image_file(path)
+    known_face_imgs.append(img)
+
+# 認証する人物の顔の画像を読み込む。
+face_img_to_check = face_recognition.load_image_file("face_to_check.jpg")
